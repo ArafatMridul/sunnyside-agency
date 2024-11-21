@@ -20,7 +20,7 @@
         <script src="app.js" defer></script>
     </head>
     <body class="font-barlow">
-        <header id="header" class="relative top-0 left-0 right-0 z-20">
+        <header id="header" class="fixed top-0 left-0 right-0 z-30">
             <nav
                 class="flex items-center justify-between px-[1.5rem] py-[1.75rem] lg:p-[2rem] max-w-[1440px] mx-auto bg-[#3DBEFF]"
             >
@@ -34,6 +34,7 @@
                         xmlns="http://www.w3.org/2000/svg"
                     >
                         <path
+                            id="path"
                             d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z"
                             fill="#FFF"
                             fill-rule="evenodd"
@@ -60,7 +61,7 @@
             
             <div
                 id="sidebar"
-                class="text-xl absolute top-[-350px] left-6 right-6 gap-6 p-9 bg-white transition-[top] duration-500 ease-in-out md:hidden" >
+                class="text-xl absolute top-[-350px] left-6 right-6 gap-6 p-9 bg-white transition-transform duration-500 ease-in-out md:hidden" >
                 <div
                     class="w-0 h-0 absolute top-0 right-0 -translate-y-[50%] border-t-[20px] border-t-transparent border-r-[20px] border-r-white border-b-[20px] border-b-transparent md:hidden"
                 ></div>
@@ -146,7 +147,7 @@
                     </p>
                     <a
                         href="#"
-                        class="relative font-fraunces uppercase font-bold text-grey-4 z-50 after:content-[''] after:block after:w-[100%] after:absolute after:left-0 after:right-0 after:bottom-[-3px] after:h-[8px] after:bg-yellow after:rounded after:opacity-30 hover:after:opacity-80"
+                        class="relative font-fraunces uppercase font-bold text-grey-4 after:content-[''] after:block after:w-[100%] after:absolute after:left-0 after:right-0 after:bottom-[-3px] after:h-[8px] after:bg-yellow after:rounded after:opacity-30 hover:after:opacity-80"
                         >Learn more</a
                     >
                 </div>
